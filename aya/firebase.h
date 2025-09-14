@@ -1,6 +1,4 @@
 #include <Firebase_ESP_Client.h>
-#include "addons/TokenHelper.h"
-#include "addons/RTDBHelper.h"
 
 #define API_KEY "AIzaSyA3Kt2igI_dSVyZ-fLxhMV8_feuRUtdFlM"
 #define DATABASE_URL "https://projek-ta-e12c8-default-rtdb.firebaseio.com"
@@ -23,6 +21,3 @@ FirebaseConfig config;
 unsigned long sendDataPrevMillis = 0;
 int count = 0;
 bool signupOK = false;
-
-// --- DEKLARASI FUNGSI FIREBASE ---
-void tokenStatusCallback(TokenInfo info);

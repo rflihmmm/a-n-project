@@ -190,6 +190,3 @@ void fireBase(float temperature, float humidity, float co2ppm) {
     }
 }
 
-void tokenStatusCallback(TokenInfo info) {
-    Serial.printf("Token Info: type = %s, status = %s\n", info.type.c_str(), info.status.c_str());
-}

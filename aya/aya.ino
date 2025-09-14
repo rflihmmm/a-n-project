@@ -43,7 +43,6 @@ void setup() {
     } else {
         Serial.printf("%s\n", config.signer.signupError.message.c_str());
     }
-    config.token_status_callback = tokenStatusCallback; //see addons/TokenHelper.h
 
     // Menghubungkan ke Firebase
     Firebase.begin(&config, &auth);
@@ -199,6 +198,3 @@ void fireBase(float waterLevel, float turbidity, float tds, float pHValue) {
     }
 }
 
-void tokenStatusCallback(TokenInfo info) {
-    Serial.printf("Token Info: type = %s, status = %s\n", info.type.c_str(), info.status.c_str());
-}

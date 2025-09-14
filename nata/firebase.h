@@ -19,6 +19,3 @@ FirebaseConfig config;
 unsigned long sendDataPrevMillis = 0;
 int count = 0;
 bool signupOK = false;
-
-// --- DEKLARASI FUNGSI FIREBASE ---
-void tokenStatusCallback(TokenInfo info);
