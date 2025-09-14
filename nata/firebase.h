@@ -1,6 +1,4 @@
 #include <Firebase_ESP_Client.h>
-#include "addons/TokenHelper.h"
-#include "addons/RTDBHelper.h"
 
 #define API_KEY "AIzaSyCMPbcZyanhZme8ZS5CBw_6X21y947hKHg"
 #define DATABASE_URL "https://leangleang-default-rtdb.firebaseio.com/"

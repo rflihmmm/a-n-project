@@ -32,7 +32,6 @@ void setup() {
   } else {
       Serial.printf("%s\n", config.signer.signupError.message.c_str());
   }
-  config.token_status_callback = tokenStatusCallback; //see addons/TokenHelper.h
 
   Firebase.begin(&config, &auth);
   Firebase.reconnectWiFi(true);
