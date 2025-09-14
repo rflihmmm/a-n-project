@@ -2,15 +2,6 @@
 #include <DHT.h>
 #include "firebase.h" // Include the new firebase.h
 
-#define WIFI_SSID "android ayz" // Use your WiFi SSID
-#define WIFI_PASSWORD "sandilama" // Use your WiFi Password
-
-#define MQ135_PIN 35
-#define DHT_PIN 32
-#define DHT_TYPE DHT22
-#define RLOAD 10.0
-#define CALIBRATION_SAMPLES 50
-
 DHT dht(DHT_PIN, DHT_TYPE);
 float rZero = 30.0; // Nilai default, akan dikalibrasi
 
